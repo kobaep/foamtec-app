@@ -65,21 +65,27 @@
             <div class="bs-callout bs-callout-info">
               <form class="form-horizontal">
                 <div class="form-group">
+                  <label for="date" class="col-sm-3 control-label">วันที่</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="date" placeholder="Date time">
+                  </div>
+                </div>
+                <div class="form-group">
                   <label for="qaName" class="col-sm-3 control-label">QA NAME</label>
                   <div class="col-sm-9">
-                    <input type="email" class="form-control" id="qaName" placeholder="ชื่อคนที่ตรวจ">
+                    <input type="text" class="form-control" id="qaName" placeholder="ชื่อคนที่ตรวจ">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="make" class="col-sm-3 control-label">จำนวนที่ผลิต</label>
                   <div class="col-sm-9">
-                    <input type="email" class="form-control" id="make" placeholder="จำนวน ชิ้น">
+                    <input type="text" class="form-control" id="make" placeholder="จำนวน ชิ้น">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="lot" class="col-sm-3 control-label">Lot ที่ตรวจ</label>
                   <div class="col-sm-9">
-                    <input type="email" class="form-control" id="lot" placeholder="จำนวนครั้งที่ตรวจ">
+                    <input type="text" class="form-control" id="lot" placeholder="จำนวนครั้งที่ตรวจ">
                   </div>
                 </div>
                 <div class="form-group">
@@ -91,25 +97,94 @@
                     <label class="btn btn-default **active**">
                       <input type="radio" name="inputWalls" id="inputWalls2" value="2" checked> ไม่มี
                     </label>
-                    <!-- <div class="row">
-                      <div class="col-sm-12">
-                        <label class="btn btn-default **active**">
-                          <input type="radio" name="inputWalls" id="inputWalls1" value="1" checked> มี
-                        </label>
-                        <label class="btn btn-default **active**">
-                          <input type="radio" name="inputWalls" id="inputWalls2" value="2" checked> ไม่มี
-                        </label>
-                      </div>
-                    </div>
-                    <div id="deni" class="row">
-                      <div class="col-sm-12">
-                        <div class="panel panel-default">
-                          <div class="panel-body">
-                            Basic panel example
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="form-group">
+                              <div class="col-sm-offset-3 col-sm-4">
+                                <label class="control-label">กะที่พบของเสีย </label>
+                                <select class="selectpicker">
+                                  <option>กะเช้าพี่ไชยง</option>
+                                  <option>กะดึกพี่ไชยง</option>
+                                  <option>กะเช้า?</option>
+                                  <option>กะดึก?</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-5">
+                                <label class="control-label">จำนวนครั้งที่พบของเสีย </label>
+                                <select class="selectpicker">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <form class="form-inline">
+                              <table class="table table-hover">
+                                <tr>
+                                  <th>No</th>
+                                  <th>Part</th>
+                                  <th>Machine</th>
+                                  <th>F/R</th>
+                                  <th>Detail</th>
+                                  <th>Customer</th>
+                                  <th>Qty</th>
+                                  <th>Employee</th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    1
+                                  </dh>
+                                  <td>
+                                    <input type="text" class="form-control" id="part" placeholder="Part No.">
+                                  </td>
+                                  <td>
+                                    <select class="selectpicker">
+                                      <option>P1</option>
+                                      <option>P2</option>
+                                      <option>P3</option>
+                                      <option>P4</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <select class="selectpicker">
+                                      <option>F</option>
+                                      <option>R</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <input type="text" class="form-control" id="detail" placeholder="Detail.">
+                                  </td>
+                                  <td>
+                                    <select class="selectpicker">
+                                      <option>Delta</option>
+                                      <option>Canon</option>
+                                      <option>Oter</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <input type="text" class="form-control" id="amout" placeholder="Qty.">
+                                  </td>
+                                  <td>
+                                    <input type="text" class="form-control" id="employeeName" placeholder="Employee Name.">
+                                  </td>
+                                </tr>
+                              </table>
+                            </form>
                           </div>
                         </div>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </form>
@@ -118,7 +193,7 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
   </body>
 </html>
