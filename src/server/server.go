@@ -1,7 +1,7 @@
 package main
 
 import (
-	"inspectionReport"
+	"htmlPage"
 	"net/http"
 )
 
@@ -13,6 +13,10 @@ func makeHandler(fn func(http.ResponseWriter, *http.Request)) http.HandlerFunc {
 
 func main() {
 	http.Handle("/static/", http.FileServer(http.Dir(".")))
-	http.HandleFunc("/ir", makeHandler(inspectionReport.PageInspectionReport))
+
+	http.HandleFunc("/", makeHandler(htmlPage.IndexPage))
+	http.HandleFunc("/login", makeHandler(htmlPage.LoginPage))
+	http.HandleFunc("/ir", makeHandler(htmlPage.PageInspectionReportPage))
+
 	http.ListenAndServe(":8080", nil)
 }

@@ -7,28 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Inspection Report</title>
-
-    <!-- Bootstrap core CSS -->
+    <title>Foamtec</title>
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="/static/css/starter-template.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="/static/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,13 +22,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Foamtec</a>
+          <a class="navbar-brand" href="/">Foamtec</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/ir">Inspection Report</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle capitalize" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&#160;&#160;</a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/login">login</a>
+                  <a href="/logout">logout</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -116,18 +110,12 @@
                                 </select>
                               </div>
                               <div class="col-sm-5">
-                                <label class="control-label">จำนวนครั้งที่พบของเสีย </label>
-                                <select class="selectpicker">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                </select>
+                                <a href="#" class="btn btn-info"><span class="glyphicon glyphicon-plus"> ADD</span></a>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="row">
+                        <div class="row hidden">
                           <div class="col-sm-12">
                             <form class="form-inline">
                               <table class="table table-hover">
@@ -140,44 +128,6 @@
                                   <th>Customer</th>
                                   <th>Qty</th>
                                   <th>Employee</th>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    1
-                                  </dh>
-                                  <td>
-                                    <input type="text" class="form-control" id="part" placeholder="Part No.">
-                                  </td>
-                                  <td>
-                                    <select class="selectpicker">
-                                      <option>P1</option>
-                                      <option>P2</option>
-                                      <option>P3</option>
-                                      <option>P4</option>
-                                    </select>
-                                  </td>
-                                  <td>
-                                    <select class="selectpicker">
-                                      <option>F</option>
-                                      <option>R</option>
-                                    </select>
-                                  </td>
-                                  <td>
-                                    <input type="text" class="form-control" id="detail" placeholder="Detail.">
-                                  </td>
-                                  <td>
-                                    <select class="selectpicker">
-                                      <option>Delta</option>
-                                      <option>Canon</option>
-                                      <option>Oter</option>
-                                    </select>
-                                  </td>
-                                  <td>
-                                    <input type="text" class="form-control" id="amout" placeholder="Qty.">
-                                  </td>
-                                  <td>
-                                    <input type="text" class="form-control" id="employeeName" placeholder="Employee Name.">
-                                  </td>
                                 </tr>
                               </table>
                             </form>
@@ -195,5 +145,10 @@
     </div>
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+      });
+    </script>
   </body>
 </html>
